@@ -1,7 +1,8 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+first:
+  name: First quote
 
-one:
-  name: MyString
+second:
+  name: Second quote
 
-two:
-  name: MyString
+third:
+  name: Third quote
