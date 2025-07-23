@@ -1,0 +1,5 @@
+<%= turbo_stream.prepend "quotes" do %>
+  <%= render partial: "quotes/quote", locals: { quote: @quote } %>
+<% end %>
+
+<%= turbo_stream.update dom_id(Quote.new), "" %>
