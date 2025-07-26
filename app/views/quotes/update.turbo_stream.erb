@@ -1,6 +1,5 @@
-<%= turbo_stream.prepend "quotes" do %>
+<%= turbo_stream.replace dom_id(@quote) do %>
   <%= render partial: "quotes/quote", locals: { quote: @quote } %>
 <% end %>
 
-<%= turbo_stream.update dom_id(Quote.new), "" %>
 <%= render_turbo_stream_flash_messages %>
